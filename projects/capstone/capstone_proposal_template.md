@@ -9,9 +9,12 @@ _(approx. 2-3 pages)_
 ### Domain Background
 _(approx. 1-2 paragraphs)_
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant.
+# Done. DELETE BEFORE SUBMISSION
 
-This project is derived from the computer vision field of research. This field is concerned with how computer programs process and analyze images.
+This project is derived from the computer vision field of research. This field is concerned with how computer programs process and analyze images. Convolutional neural networks (CNN), which are a class of deep neural networks have been applied to the computer vision field. CNN's can be used to solve problems in the computer vision field. See researched cited below on how CNN's have been used to solve computer vision problems.
+
+Face Recognition: A Convolutional Neural-Network Approach: http://www.cs.cmu.edu/afs/cs/user/bhiksha/WWW/courses/deeplearning/Fall.2016/pdfs/Lawrence_et_al.pdf
+MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications: https://arxiv.org/pdf/1704.04861.pdf
 
 On a personal level I love dogs and this is a great way to learn about different breeds. I also word for a video security company, so anything I learn here may be able to used for our products.
 
