@@ -24,12 +24,11 @@ A client wants to create an phone application that can take a picture of a dog a
 
 The datasets in this project are images of dogs and image labels with the dog name corresponding to each image. Each image will be jpeg & 256x256 pixels. Each image will be named after the dog breed the image is of. The images will be used to train the algorithm that will be used in the application. Images will also be used as inputs for the application itself. The image dataset is from the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/.
 
-The input dataset of image labels will be a csv file. Each label will the dog breed name. The labels will be created using an algorithm to take the name of each image and have the ".jpg" removed from it.
+The input dataset of image labels will be a csv file. Each label will the dog breed name. The labels will be created using an algorithm to take the name of each image and have the ".jpg" removed from it. This dataset will only be used to create the algorithm for the application. Once the application is in production it will no longer use labels as an input.
 
 ### Solution Statement
-_(approx. 1 paragraph)_
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+The solution to this problem will be to create an algorithm using deep learning. The dog breed dataset images and labels will be fed into our model to learn how to identify dog breeds. Separate images will be used to test the accuracy of the model. Once a certain accuracy is reached the algorithm will be complete.
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
