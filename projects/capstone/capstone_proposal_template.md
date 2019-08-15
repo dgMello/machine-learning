@@ -18,12 +18,13 @@ On a personal level, I love dogs and this is a great way to learn about differen
 
 ### Problem Statement
 
-A client wants to create an phone application that can take a picture of a dog and then display the type of breed the dog is. We have been tasked with creating the algorithm that will identify the dogs. The algorithm should be able to take a picture as an input and output a string that tells the user what the dog breed is. This algorithm should work with as many dog breeds as possible, depending how many breeds the algorithm is trained on.
+A client wants to create an phone application that can take a picture of a dog and then display the type of breed the dog is. We have been tasked with creating the algorithm that will identify the dogs. The algorithm should be able to take a image as an input and output a string that tells the user what the dog breed is. This algorithm should work with as many dog breeds as possible, depending how many breeds the algorithm is trained on.
 
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+The datasets in this project are images of dogs and image labels with the dog name corresponding to each image. Each image will be jpeg & 256x256 pixels. Each image will be named after the dog breed the image is of. The images will be used to train the algorithm that will be used in the application. Images will also be used as inputs for the application itself. The image dataset is from the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/.
+
+The input dataset of image labels will be a csv file. Each label will the dog breed name. The labels will be created using an algorithm to take the name of each image and have the ".jpg" removed from it.
 
 ### Solution Statement
 _(approx. 1 paragraph)_
