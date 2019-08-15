@@ -1,15 +1,12 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
-Joe Udacity  
-December 31st, 2050
+Doug Mello
+August 14th, 2019
 
 ## Proposal
 _(approx. 2-3 pages)_
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
-
-# Done. DELETE BEFORE SUBMISSION
 
 This project is derived from the computer vision field of research. This field is concerned with how computer programs process and analyze images. Convolutional neural networks (CNN), which are a class of deep neural networks have been applied to the computer vision field. CNN's can be used to solve problems in the computer vision field. See researched cited below on how CNN's have been used to solve computer vision problems.
 
@@ -20,11 +17,8 @@ This project is derived from the computer vision field of research. This field i
 On a personal level, I love dogs and this is a great way to learn about different breeds. I also word for a video security company, so anything I learn here may be able to used for our products.
 
 ### Problem Statement
-_(approx. 1 paragraph)_
 
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
-
-A client wants to create an phone application that can take a picture of a dog and then display the type of breed the dog is.
+A client wants to create an phone application that can take a picture of a dog and then display the type of breed the dog is. We have been tasked with creating the algorithm that will identify the dogs. The algorithm should be able to take a picture as an input and output a string that tells the user what the dog breed is. This algorithm should work with as many dog breeds as possible, depending how many breeds the algorithm is trained on.
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
