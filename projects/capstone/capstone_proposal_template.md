@@ -28,24 +28,35 @@ The input dataset of image labels will be a csv file. Each label will the dog br
 
 ### Solution Statement
 
-The solution to this problem will be to create an algorithm using deep learning. The dog breed dataset images and labels will be fed into our model to learn how to identify dog breeds. Separate images will be used to test the accuracy of the model. Once a certain accuracy is reached the algorithm will be complete.
+The solution to this problem will be to create an algorithm using deep learning. The dog breed dataset images and labels will be fed into our algorithm to learn how to identify dog breeds. Separate images will be used to test the accuracy of the algorithm. Once a certain accuracy is reached the algorithm will be complete.
 
 ### Benchmark Model
 
-There does not appear to be any benchmark models that have been created for this problem. However I will create a benchmark model our own results. Our model should have an accuracy of at least 60%. Since our algorithm only has to perform one function to solve this problem the accuracy is the only benchmark to solve the problem.
+There does not appear to be any benchmark models that have been created for this problem. However I will create a benchmark model our own results. Our algorithm should have an accuracy of at least 60%. Since our algorithm only has to perform one function to solve this problem the accuracy is the only benchmark to solve the problem.
 
-For training our model we can create a benchmark model for training loss and accuracy. During training of our model our loss should be at most 0.600 and training accuracy should be at least 60%.
+For training our algorithm we can create a benchmark model for training loss and accuracy. During training of our algorithm our loss should be at most 0.600 and training accuracy should be at least 60%.
 
 ### Evaluation Metrics
 
-For any type of algorithm where we are training a model, we set a side a percent of the dataset to test our algorithm with. After we have trained our model we will pass test images as input into our model to test it. I will also use images found randomly on the internet to test as well. This will allow us to test our model on data that was not on our dataset. With both tests of different images we should have an accuracy of 60%.
+For any type of algorithm where we are training a algorithm, we set a side a percent of the dataset to test our algorithm with. After we have trained our algorithm we will pass test images as input into our algorithm to test it. I will also use images found randomly on the internet to test as well. This will allow us to test our algorithm on data that was not on our dataset. With both tests of different images we should have an accuracy of 60%.
 
-For training loss and accuracy our model will have text output that will say what the current raining loss and accuracy is.
+For training loss and accuracy our algorithm will have text output that will say what the current raining loss and accuracy is.
 
 ### Project Design
 _(approx. 1 page)_
 
 In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
+
+1. Preprocess data. Separate data into training, testing & validation.
+ - In this step we are going to take our dataset and break it into 3 separate datasets. The training set will be used for training our model. The testing set will be use to test our model after it's completed testing. The validation set will be use to check the accuracy of our model while it is training. 
+
+2. Create the architecture of our model.
+
+3. Choose the loss function and optimizer for our model.
+
+4. Train and validate the model.
+
+5. Test the model.
 
 -----------
 
