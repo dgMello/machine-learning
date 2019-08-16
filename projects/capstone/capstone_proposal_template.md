@@ -22,7 +22,7 @@ A client wants to create an phone application that can take a picture of a dog a
 
 ### Datasets and Inputs
 
-The datasets in this project are images of dogs and image labels with the dog name corresponding to each image. Each image will be jpeg & 256x256 pixels. Each image will be named after the dog breed the image is of. The images will be used to train the algorithm that will be used in the application. Images will also be used as inputs for the application itself. The image dataset is from the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/.
+The datasets in this project are images of dogs and image labels with the dog name corresponding to each image. Each image will be jpeg & 256x256 pixels. Each image will be named after the dog breed the image is of. The images will be used to train the algorithm that will be used in the application. Images will also be used as inputs for the application itself. In a real world scenario an image dataset that could be use is the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/. For the Dog Breed Classifier notebook, the datasets will be provided by Udacity.
 
 The input dataset of image labels will be a csv file. Each label will the dog breed name. The labels will be created using an algorithm to take the name of each image and have the ".jpg" removed from it. This dataset will only be used to create the algorithm for the application. Once the application is in production it will no longer use labels as an input.
 
@@ -31,14 +31,17 @@ The input dataset of image labels will be a csv file. Each label will the dog br
 The solution to this problem will be to create an algorithm using deep learning. The dog breed dataset images and labels will be fed into our model to learn how to identify dog breeds. Separate images will be used to test the accuracy of the model. Once a certain accuracy is reached the algorithm will be complete.
 
 ### Benchmark Model
-_(approximately 1-2 paragraphs)_
 
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
+There does not appear to be any benchmark models that have been created for this problem. However I will create a benchmark model our own results. Our model should have an accuracy of at least 60%. Since our algorithm only has to perform one function to solve this problem the accuracy is the only benchmark to solve the problem.
+
+For training our model we can create a benchmark model for training loss and accuracy. During training of our model our loss should be at most 0.600 and training accuracy should be at least 60%. 
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
 In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+
+For any type of algorithm where we are training a model, we set a side a percent of the dataset to test our algorithm with. After we have trained our model we will pass test images as input into our model to test it.
 
 ### Project Design
 _(approx. 1 page)_
