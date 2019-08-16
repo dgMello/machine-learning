@@ -48,7 +48,9 @@ _(approx. 1 page)_
 In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
 
 1. Preprocess data. Separate data into training, testing & validation.
- - In this step we are going to take our dataset and break it into 3 separate datasets. The training set will be used for training our model. The testing set will be use to test our model after it's completed testing. The validation set will be use to check the accuracy of our model while it is training. 
+ - In this step we are going to take our dataset and break it into 3 separate datasets. The training set will be used for training our model. The testing set will be use to test our model after it's completed testing. The validation set will be use to check the accuracy of our model while it is training.
+
+ I will use the PyTorch DataLoader class to do this. This class separate the data for us as well shuffle & transform it. Doing this will help keep our data randomized so theirs less bias in our training.
 
 2. Create the architecture of our model.
 
