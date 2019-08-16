@@ -34,14 +34,13 @@ The solution to this problem will be to create an algorithm using deep learning.
 
 There does not appear to be any benchmark models that have been created for this problem. However I will create a benchmark model our own results. Our model should have an accuracy of at least 60%. Since our algorithm only has to perform one function to solve this problem the accuracy is the only benchmark to solve the problem.
 
-For training our model we can create a benchmark model for training loss and accuracy. During training of our model our loss should be at most 0.600 and training accuracy should be at least 60%. 
+For training our model we can create a benchmark model for training loss and accuracy. During training of our model our loss should be at most 0.600 and training accuracy should be at least 60%.
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
 
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+For any type of algorithm where we are training a model, we set a side a percent of the dataset to test our algorithm with. After we have trained our model we will pass test images as input into our model to test it. I will also use images found randomly on the internet to test as well. This will allow us to test our model on data that was not on our dataset. With both tests of different images we should have an accuracy of 60%.
 
-For any type of algorithm where we are training a model, we set a side a percent of the dataset to test our algorithm with. After we have trained our model we will pass test images as input into our model to test it.
+For training loss and accuracy our model will have text output that will say what the current raining loss and accuracy is.
 
 ### Project Design
 _(approx. 1 page)_
