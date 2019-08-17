@@ -4,7 +4,6 @@ Doug Mello
 August 14th, 2019
 
 ## Proposal
-_(approx. 2-3 pages)_
 
 ### Domain Background
 
@@ -50,15 +49,23 @@ In this final section, summarize a theoretical workflow for approaching a soluti
 1. Preprocess data. Separate data into training, testing & validation.
  - In this step we are going to take our dataset and break it into 3 separate datasets. The training set will be used for training our model. The testing set will be use to test our model after it's completed testing. The validation set will be use to check the accuracy of our model while it is training.
 
- I will use the PyTorch DataLoader class to do this. This class separate the data for us as well shuffle & transform it. Doing this will help keep our data randomized so theirs less bias in our training.
+ - I will use the PyTorch DataLoader class to do this. This class separate the data for us as well shuffle & transform it. Doing this will help keep our data randomized so theirs less bias in our training.
 
 2. Create the architecture of our model.
+
+- In this step the architecture of our model will be designed.
 
 3. Choose the loss function and optimizer for our model.
 
 4. Train and validate the model.
 
-5. Test the model.
+ - In this step the model will be trained. All that is required is to run the code below. After this outputs of the current loss and accuracy will be displayed. This way I can see how the training is going.
+
+model_transfer.load_state_dict(torch.load('model_transfer.pt'))
+
+5. Test the model And Verify Accuracy Is At Least 60%.
+
+- In this step we will input our test data into our newly trained model. If we have get at least 60% accuracy we know that the model will work for production. If the accuracy is below 60% steps 2-5 will need to be performed again until we achieve at least 60% accuracy.
 
 -----------
 
