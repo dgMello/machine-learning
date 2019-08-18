@@ -17,17 +17,23 @@ On a personal level, I love dogs and this is a great way to learn about differen
 
 ### Problem Statement
 
-A client wants to create an phone application that can take a picture of a dog and then display the type of breed the dog is. We have been tasked with creating the algorithm that will identify the dogs. The algorithm should be able to take a image as an input and output a string that tells the user what the dog breed is. This algorithm should work with as many dog breeds as possible, depending how many breeds the algorithm is trained on.
+A client wants to create an phone application that can do the following.
+
+1. Take a picture of a dog or human.
+2. Determine if the picture is of a human or dog.
+4. If the picture is of a human it will output what type of dog breed the human looks like. If the picture is of a dog it will output what breed it is.
+
+ We have been tasked with creating the algorithm that will identify the dogs and humans and provide the breed output. The algorithm should be able to take a image as an input and output a string that tells the user what the dog breed it is. This algorithm should work with as many dog breeds as possible, depending how many breeds the algorithm is trained on.
 
 ### Datasets and Inputs
 
-The datasets in this project are images of dogs and image labels with the dog name corresponding to each image. Each image will be jpeg & 256x256 pixels. Each image will be named after the dog breed the image is of. The images will be used to train the algorithm that will be used in the application. Images will also be used as inputs for the application itself. In a real world scenario an image dataset that could be use is the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/. For the Dog Breed Classifier notebook, the datasets will be provided by Udacity.
+The datasets in this project are images of dogs & humans and image labels with the dog name corresponding to each image. Each image will be jpeg & 256 x 256 pixels. Each dog image will be named after the dog breed the image is of. The dog images will be used to train the algorithm that will be used in the application. Human images will only be used for testing the algorithm. Images will also be used as inputs for the application itself. In a real world scenario an image dataset that could be use is the Stanford Dogs Dataset, http://vision.stanford.edu/aditya86/ImageNetDogs/. For the Dog Breed Classifier notebook, the datasets will be provided by Udacity.
 
 The input dataset of image labels will be a csv file. Each label will the dog breed name. The labels will be created using an algorithm to take the name of each image and have the ".jpg" removed from it. This dataset will only be used to create the algorithm for the application. Once the application is in production it will no longer use labels as an input.
 
 ### Solution Statement
 
-The solution to this problem will be to create an algorithm using deep learning. The dog breed dataset images and labels will be fed into our algorithm to learn how to identify dog breeds. Separate images will be used to test the accuracy of the algorithm. Once a certain accuracy is reached the algorithm will be complete.
+The solution to this problem will be to create an algorithm using the OpenCV library to detect humans and deep learning to detect dog breeds. The dog breed dataset images and labels will be fed into our algorithm to learn how to identify dog breeds. Separate images will be used to test the accuracy of the algorithm. Once a certain accuracies are reached the algorithm will be complete.
 
 ### Benchmark Model
 
